@@ -1,6 +1,6 @@
 # 接口设计
 
-* ## 概述
+## 概述
 
 #### **服务端地址**
 
@@ -11,9 +11,26 @@
 
 #### 请共通头部定义
 
+* Accept: application/json
+* Content-Type: application/json
+
 #### 国际化
 
+待定
+
 #### 错误码
+
+* http响应码 200 服务端响应成功
+
+* http响应码 4xx 或者 5xx，格式：
+
+```
+{
+    "code": "REQUIRE_ARGUMENT",
+    "message": "错误消息",
+    "detial": "报错详情"
+}
+```
 
 #### 统一响应
 
