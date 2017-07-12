@@ -206,7 +206,7 @@ DTU/DEVICE\_NOT\_FOUND
 
 DTU/DEVICE\_NOT\_FOUND
 
-#### 设备操作日志相关
+### 设备操作日志相关
 
 #### 获取某一个设备的操作日志\[GET\] /m/devices/{device\_id}/logs?$count=true&$offset=偏移量&$limit=数量
 
