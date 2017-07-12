@@ -103,27 +103,27 @@ http响应码 200 服务端响应成功
 * 响应内容：
 * 错误码：
 
-##### 获取用户列表\[GET\] /m/users
+##### 获取用户列表\[GET\] /m/users?$count=true&$offset=偏移量&$limit=数量
 
 ##### 创建用户\[POST\] /m/users
 
-##### 更新用户信息\[PATCH\] /m/user/{user\_id}
+##### 更新用户信息\[PATCH\] /m/users/{user\_id}
 
-##### 删除用户\[DELETE\] /m/user/{user\_id}
+##### 删除用户\[DELETE\] /m/users/{user\_id}
 
 ##### 修改用户密码\[PUT\] /m/users/{user\_id}/password
 
 #### 设备相关
 
-##### 获取单个设备信息
+##### 获取单个设备信息\[GET\] /m/devices/{device\_id}
 
-##### 获取设备列表
+##### 获取设备列表\[GET\] /m/devices?$count=true&$offset=偏移量&$limit=数量
 
-##### 添加设备
+##### 添加设备\[POST\] /m/devices
 
-##### 更新设备
+##### 更新设备\[PATCH\] /m/devices/{device\_id}
 
-##### 删除设备
+##### 删除设备\[DELETE\] /m/devices/{device\_id}
 
 #### 设备操作日志相关
 
