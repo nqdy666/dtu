@@ -14,7 +14,25 @@ id 默认自增
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
 
 * 设备表（device）
+
+| 字段 | 数据类型 | 主键 | 是否不为空 | 独一无二 | 默认值 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| id | INT\(11\) | 是 | 是 |  |  | ID |
+| name | VARCHAR\(80\) |  |  |  |  | 设备名称 |
+| no | VARCHAR\(45\) |  | 是 | 是 |  | 设备编号 |
+| status | INT\(11\) |  | 是 |  |  | 设备状态 |
+| create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
+| update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
+
 * 设备日志表（device\_log）
-* 
+
+| 字段 | 数据类型 | 主键 | 是否不为空 | 独一无二 | 默认值 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| id | INT\(11\) | 是 | 是 |  |  | ID |
+| device\_id | INT\(11\) |  | 是 |  |  | 设备ID |
+| status | INT\(11\) |  | 是 |  |  | 设备状态 |
+| mark | VARCHAR\(240\) |  |  |  |  | 备注 |
+| create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
+
 
 
