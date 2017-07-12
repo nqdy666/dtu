@@ -56,6 +56,35 @@ http响应码 200 服务端响应成功
 
 #### 结构约定
 
+* **USER**
+
+```
+{
+    "createTime": 1499847783000,
+    "id": 5,
+    "loginName": "admin",
+    "nickName": "admin",
+    "updateTime": 1499847783000
+}
+```
+
+* DEVICE
+
+```
+{
+    "id": 3,
+    "name": "name",
+    "no": "12312323",
+    "status": 2,
+    "createTime": 1498044412000,
+    "updateTime": 1498044412000
+}
+```
+
+* DEVICE\_LOG
+
+
+
 ## 基础功能接口
 
 ## 
