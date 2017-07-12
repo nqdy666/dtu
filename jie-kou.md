@@ -60,10 +60,10 @@ http响应码 200 服务端响应成功
 
 ```
 {
+    "id": 1,
+    "loginName": "root",
+    "nickName": "超级管理员",
     "createTime": 1499847783000,
-    "id": 5,
-    "loginName": "admin",
-    "nickName": "admin",
     "updateTime": 1499847783000
 }
 ```
@@ -73,7 +73,7 @@ http响应码 200 服务端响应成功
 ```
 {
     "id": 3,
-    "name": "name",
+    "name": "设备名称",
     "no": "12312323",
     "status": 2,
     "createTime": 1498044412000,
@@ -83,7 +83,15 @@ http响应码 200 服务端响应成功
 
 * DEVICE\_LOG
 
-
+```
+{
+    "id": 3,
+    "deviceId": 3,
+    "status": 2,
+    "mark": '',
+    "createTime": 1499852542000
+}
+```
 
 ## 基础功能接口
 
