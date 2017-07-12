@@ -56,7 +56,7 @@ http响应码 200 服务端响应成功
 
 #### 结构约定
 
-* **USER**
+* ##### **USER**
 
 ```
 {
@@ -68,7 +68,7 @@ http响应码 200 服务端响应成功
 }
 ```
 
-* DEVICE
+* ##### DEVICE
 
 ```
 {
@@ -81,7 +81,7 @@ http响应码 200 服务端响应成功
 }
 ```
 
-* DEVICE\_LOG
+* ##### DEVICE\_LOG
 
 ```
 {
@@ -127,13 +127,13 @@ http响应码 200 服务端响应成功
 
 #### 设备操作日志相关
 
-##### 获取某一个设备的操作日志
+##### 获取某一个设备的操作日志\[GET\] /m/devices/{device\_id}/logs?$count=true&$offset=偏移量&$limit=数量
 
-##### 获取某一条设备操作日志详情
+##### 获取某一条设备操作日志详情\[GET\] /m/devices/logs/{device\_log\_id}
 
-##### 删除某一条设备操作日志
+##### 删除某一条设备操作日志\[GET\] /m/devices/logs/{device\_log\_id}
 
-##### 添加设备的操作日志
+##### 添加设备的操作日志\[GET\] /m/devices/{device\_id}/logs
 
 
 
