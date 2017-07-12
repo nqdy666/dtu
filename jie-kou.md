@@ -156,9 +156,7 @@ DTU/USER\_EXISTS
 
 #### 更新用户信息\[PATCH\] /m/users/{user\_id}
 
-* 响应内容：
-
-[USER](#user)
+* 响应内容：[USER](https://www.gitbook.com/book/nqdy666/dtu/edit#)
 
 * 错误码：
 
