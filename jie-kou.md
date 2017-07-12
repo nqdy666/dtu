@@ -2,8 +2,6 @@
 
 ## 摘要
 
-
-
 ## 概述
 
 #### **服务端地址**
@@ -121,29 +119,92 @@ http响应码 200 服务端响应成功
 
 * 错误码：
 
-
+DTU/USER\_NOT\_FOUND
 
 ##### 获取用户列表\[GET\] /m/users?$count=true&$offset=偏移量&$limit=数量
 
+* 响应内容：
+
+```
+{
+    "count":1,
+    "items":[
+      {USER},...
+    ]
+}
+```
+
 ##### 创建用户\[POST\] /m/users
+
+请求内容：
+
+```
+{
+    "login_name": "admin1",
+    "nick_name": "admin",
+    "password": "E10ADC3949BA59ABBE56E057F20F883E"
+}
+```
+
+* 响应内容：
+
+[USER](#user)
+
+* 错误码：
+
+DTU/USER\_EXISTS
 
 ##### 更新用户信息\[PATCH\] /m/users/{user\_id}
 
+* 响应内容：
+
+[USER](#user)
+
+* 错误码：
+
+DTU/USER\_NOT\_FOUND
+
 ##### 删除用户\[DELETE\] /m/users/{user\_id}
 
+* 错误码：
+
+DTU/USER\_NOT\_FOUND
+
 ##### 修改用户密码\[PUT\] /m/users/{user\_id}/password
+
+* 错误码：
+
+DTU/USER\_PASSWORD\_SAME
+
+DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 #### 设备相关
 
 ##### 获取单个设备信息\[GET\] /m/devices/{device\_id}
 
+* 错误码：
+
+DTU/DEVICE\_NOT\_FOUND
+
 ##### 获取设备列表\[GET\] /m/devices?$count=true&$offset=偏移量&$limit=数量
 
 ##### 添加设备\[POST\] /m/devices
 
+* 错误码：
+
+DTU/DEVICE\_EXISTS
+
 ##### 更新设备\[PATCH\] /m/devices/{device\_id}
 
+* 错误码：
+
+DTU/DEVICE\_NOT\_FOUND
+
 ##### 删除设备\[DELETE\] /m/devices/{device\_id}
+
+* 错误码：
+
+DTU/DEVICE\_NOT\_FOUND
 
 #### 设备操作日志相关
 
@@ -151,9 +212,21 @@ http响应码 200 服务端响应成功
 
 ##### 获取某一条设备操作日志详情\[GET\] /m/devices/logs/{device\_log\_id}
 
+* 错误码：
+
+DTU/DEVICE\_LOG\_NOT\_FOUND
+
 ##### 删除某一条设备操作日志\[GET\] /m/devices/logs/{device\_log\_id}
 
+* 错误码：
+
+DTU/DEVICE\_LOG\_NOT\_FOUND
+
 ##### 添加设备的操作日志\[GET\] /m/devices/{device\_id}/logs
+
+* 错误码：
+
+DTU/DEVICE\_NOT\_FOUND
 
 
 
