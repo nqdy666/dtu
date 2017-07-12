@@ -107,11 +107,11 @@ http响应码 200 服务端响应成功
 
 ##### 创建用户\[POST\] /m/users
 
-##### 更新用户信息
+##### 更新用户信息\[PATCH\] /m/user/{user\_id}
 
-##### 删除用户
+##### 删除用户\[DELETE\] /m/user/{user\_id}
 
-##### 修改用户密码
+##### 修改用户密码\[PUT\] /m/users/{user\_id}/password
 
 #### 设备相关
 
