@@ -100,7 +100,19 @@ http响应码 200 服务端响应成功
 ##### 获取单个用户信息\[GET\] /m/user/{user\_id}
 
 * 请求内容：
+
+```
+{
+    "id": 3,
+    "loginName": "root",
+    "nickName": "超级管理员",
+    "createTime": 1497966418000,
+    "updateTime": 1497966418000
+}
+```
+
 * 响应内容：
+
 * 错误码：
 
 ##### 获取用户列表\[GET\] /m/users?$count=true&$offset=偏移量&$limit=数量
