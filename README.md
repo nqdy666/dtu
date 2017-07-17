@@ -97,6 +97,19 @@ id 默认自增
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
 
+* 大流量表Big flow meter（big\_flow_\__meter）
+
+| 字段 | 数据类型 | 主键 | 是否不为空 | 独一无二 | 默认值 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| id | INT\(11\) | 是 | 是 |  |  | ID |
+| factory\_id | INT\(11\) |  | 是 | 是 |  | 工厂ID |
+| name | VARCHAR\(45\) |  |  |  |  | PLC设备名称 |
+| no | VARCHAR\(45\) |  | 是 | 是 |  | 设备编码 |
+| status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| value | VARCHAR\(60\) |  |  |  |  | 流量值 |
+| create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
+| update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
+
 * 设备日志表（device\_log）
 
 | 字段 | 数据类型 | 主键 | 是否不为空 | 独一无二 | 默认值 | 说明 |
@@ -104,6 +117,7 @@ id 默认自增
 | id | INT\(11\) | 是 | 是 |  |  | ID |
 | device\_id | INT\(11\) |  | 是 |  |  | 设备ID |
 | status | INT\(11\) |  | 是 |  |  | 设备状态 |
+| operator\_id | INT\(11\) |  |  |  |  | 操作者ID |
 | mark | VARCHAR\(240\) |  |  |  |  | 备注 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 
