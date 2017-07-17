@@ -135,6 +135,8 @@ id 默认自增
 | device\_type | INT\(11\) |  | 是 |  |  | 1 总闸，2 plc，3 环境设备，4 池子，5 溶解氧传感器，6 污水床干起， 7 大流量表 |
 | device\_id | INT\(11\) |  | 是 |  |  | 设备ID |
 | switch\_status | INT\(11\) |  | 是 |  |  | 设备状态 |
+| value\_one | VARCHAR\(240\) |  |  |  |  | 值1 |
+| value\_two | VARCHAR\(240\) |  |  |  |  | 值2（备用） |
 | operator\_id | INT\(11\) |  |  |  |  | 操作者ID |
 | mark | VARCHAR\(240\) |  |  |  |  | 备注 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
