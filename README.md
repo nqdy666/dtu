@@ -1,3 +1,6 @@
+
+---
+
 # 数据库表设计
 
 id 默认自增
@@ -75,6 +78,4 @@ id 默认自增
 | status | INT\(11\) |  | 是 |  |  | 设备状态 |
 | mark | VARCHAR\(240\) |  |  |  |  | 备注 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
-
-
 
