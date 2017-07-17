@@ -126,10 +126,20 @@ id 默认自增
 | 字段 | 数据类型 | 主键 | 是否不为空 | 独一无二 | 默认值 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | INT\(11\) | 是 | 是 |  |  | ID |
+| device\_type | INT\(11\) |  | 是 |  |  | 1 总闸，2 plc，3 环境设备，4 池子，5 溶解氧传感器，6 污水床干起， 7 大流量表 |
 | device\_id | INT\(11\) |  | 是 |  |  | 设备ID |
 | status | INT\(11\) |  | 是 |  |  | 设备状态 |
 | operator\_id | INT\(11\) |  |  |  |  | 操作者ID |
 | mark | VARCHAR\(240\) |  |  |  |  | 备注 |
+| create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
+
+* 用户日志表（user\_log）
+
+| 字段 | 数据类型 | 主键 | 是否不为空 | 独一无二 | 默认值 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| id | INT\(11\) | 是 | 是 |  |  | ID |
+| user\_id | INT\(11\) |  | 是 |  |  | 设备ID |
+| mark | VARCHAR\(1024\) |  |  |  |  | 备注 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 
 
