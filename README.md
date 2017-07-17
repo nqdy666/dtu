@@ -34,7 +34,6 @@ id 默认自增
 | name | VARCHAR\(45\) |  |  |  |  | 总闸名称 |
 | switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
 | abnormal\_status | INT\(11\) |  | 是 |  | 1 | 1正常，2异常 |
-| mark | VARCHAR\(240\) |  |  |  |  |  |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
 
