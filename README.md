@@ -32,7 +32,9 @@ id 默认自增
 | id | INT\(11\) | 是 | 是 |  |  | ID |
 | factory\_id | INT\(11\) |  | 是 | 是 |  | 工厂ID |
 | name | VARCHAR\(45\) |  |  |  |  | 总闸名称 |
-| status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| abnormal\_status | INT\(11\) |  | 是 |  | 1 | 1正常，2异常 |
+| mark | VARCHAR\(240\) |  |  |  |  |  |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
 
@@ -43,7 +45,8 @@ id 默认自增
 | id | INT\(11\) | 是 | 是 |  |  | ID |
 | factory\_id | INT\(11\) |  | 是 | 是 |  | 工厂ID |
 | name | VARCHAR\(45\) |  |  |  |  | PLC设备名称 |
-| status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| abnormal\_status | INT\(11\) |  | 是 |  | 1 | 1正常，2异常 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
 
@@ -55,7 +58,8 @@ id 默认自增
 | plc\_id | INT\(11\) |  | 是 | 与name联合唯一索引 |  | PLC设备ID |
 | name | VARCHAR\(45\) |  | 是 | 与plc\_id联合唯一索引 |  | 环境设备名称 |
 | no | VARCHAR\(45\) |  | 是 | 是 |  | 设备编码 |
-| status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| abnormal\_status | INT\(11\) |  | 是 |  | 1 | 1正常，2异常 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
 
@@ -67,7 +71,8 @@ id 默认自增
 | factory\_id | INT\(11\) |  | 是 |  |  | 工厂ID |
 | no | VARCHAR\(45\) |  | 是 | 是 |  | 池子编码 |
 | name | VARCHAR\(45\) |  |  |  |  | 池子名称 |
-| status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| abnormal\_status | INT\(11\) |  | 是 |  | 1 | 1正常，2异常 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
 
@@ -79,7 +84,8 @@ id 默认自增
 | factory\_id | INT\(11\) |  | 是 |  |  | 工厂ID |
 | name | VARCHAR\(45\) |  |  |  |  | 名称 |
 | no | VARCHAR\(45\) |  | 是 | 是 |  | 设备编码 |
-| status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| abnormal\_status | INT\(11\) |  | 是 |  | 1 | 1正常，2异常 |
 | value | VARCHAR\(60\) |  |  |  |  | 溶解氧值 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
@@ -92,7 +98,8 @@ id 默认自增
 | factory\_id | INT\(11\) |  | 是 |  |  | 工厂ID |
 | name | VARCHAR\(45\) |  |  |  |  | 名称 |
 | no | VARCHAR\(45\) |  | 是 | 是 |  | 设备编码 |
-| status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| abnormal\_status | INT\(11\) |  | 是 |  | 1 | 1正常，2异常 |
 | value | VARCHAR\(60\) |  |  |  |  | 溶解氧值 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
@@ -105,7 +112,7 @@ id 默认自增
 | factory\_id | INT\(11\) |  | 是 |  |  | 工厂ID |
 | name | VARCHAR\(45\) |  |  |  |  | 名称 |
 | no | VARCHAR\(45\) |  | 是 | 是 |  | 设备编码 |
-| status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
+| switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
 | value | VARCHAR\(60\) |  |  |  |  | 流量值 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
@@ -128,7 +135,7 @@ id 默认自增
 | id | INT\(11\) | 是 | 是 |  |  | ID |
 | device\_type | INT\(11\) |  | 是 |  |  | 1 总闸，2 plc，3 环境设备，4 池子，5 溶解氧传感器，6 污水床干起， 7 大流量表 |
 | device\_id | INT\(11\) |  | 是 |  |  | 设备ID |
-| status | INT\(11\) |  | 是 |  |  | 设备状态 |
+| switch\_status | INT\(11\) |  | 是 |  |  | 设备状态 |
 | operator\_id | INT\(11\) |  |  |  |  | 操作者ID |
 | mark | VARCHAR\(240\) |  |  |  |  | 备注 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
