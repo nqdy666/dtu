@@ -58,28 +58,145 @@ http响应码 200 服务端响应成功
 
 #### 结构约定
 
-* ##### **USER**
+* ##### USER
 
 ```
 {
     "id": 1,
-    "loginName": "root",
-    "nickName": "超级管理员",
-    "createTime": 1499847783000,
-    "updateTime": 1499847783000
+    "login_name": "root",
+    "nick_name": "超级管理员",
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
 }
 ```
 
-* ##### DEVICE
+* ##### FACTORY
 
 ```
 {
-    "id": 3,
-    "name": "设备名称",
-    "no": "12312323",
-    "status": 2,
-    "createTime": 1498044412000,
-    "updateTime": 1498044412000
+    "id": 1,
+    "name": "工厂名称",
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
+}
+```
+
+* ##### MAIN\_SWITCH
+
+```
+{
+    "id": 1,
+    "factory_id": "1",
+    "name": "总闸名称",
+    "switch_status": 2,
+    "abnormal_status": 1,
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
+}
+```
+
+* ##### PLC
+
+```
+{
+    "id": 1,
+    "factory_id": "1",
+    "name": "PLC设备名称",
+    "switch_status": 2,
+    "abnormal_status": 1,
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
+}
+```
+
+* ##### ECE
+
+```
+{
+    "id": 1,
+    "plc_id": "1",
+    "name": "环境设备名称",
+    "no": "设备编码",
+    "switch_status": 2,
+    "abnormal_status": 1,
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
+}
+```
+
+* ##### POOL
+
+```
+{
+    "id": 1,
+    "factory_id": "1",
+    "name": "池子名称",
+    "no": "池子编码",
+    "switch_status": 2,
+    "abnormal_status": 1,
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
+}
+```
+
+* ##### DO\_SENSOR
+
+```
+{
+    "id": 1,
+    "factory_id": "1",
+    "name": "溶解氧传感器名称",
+    "no": "设备编码",
+    "switch_status": 2,
+    "abnormal_status": 1,
+    "value": "溶解氧值",
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
+}
+```
+
+* ##### WATER\_SENSOR
+
+```
+{
+    "id": 1,
+    "factory_id": "1",
+    "name": "名称",
+    "no": "设备编码",
+    "switch_status": 2,
+    "abnormal_status": 1,
+    "value": "溶解氧值",
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
+}
+```
+
+* ##### BIG\_FLOW\_METER
+
+```
+{
+    "id": 1,
+    "factory_id": "1",
+    "name": "名称",
+    "no": "设备编码",
+    "switch_status": 2,
+    "abnormal_status": 1,
+    "value": "流量值",
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
+}
+```
+
+* ##### DTU
+
+```
+{
+    "id": 1,
+    "factory_id": "1",
+    "name": "名称",
+    "url": "设备URL",
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
 }
 ```
 
@@ -88,10 +205,26 @@ http响应码 200 服务端响应成功
 ```
 {
     "id": 3,
-    "deviceId": 3,
-    "status": 2,
-    "mark": '',
-    "createTime": 1499852542000
+    "device_type": 3,
+    "device_id": 3,
+    "switch_status": 2,
+    "abnormal_status": 1,
+    "value_one": "1",
+    "value_two": "2",
+    "operator_id": 1,
+    "mark": '备注',
+    "create_time": 1499852542000
+}
+```
+
+* ##### USER\_LOG
+
+```
+{
+    "id": 1,
+    "user_id": "1",
+    "mark": '备注',
+    "create_time": 1499852542000
 }
 ```
 
@@ -106,10 +239,10 @@ http响应码 200 服务端响应成功
 ```
 {
     "id": 3,
-    "loginName": "root",
-    "nickName": "超级管理员",
-    "createTime": 1497966418000,
-    "updateTime": 1497966418000
+    "login_name": "root",
+    "nick_name": "超级管理员",
+    "create_time": 1497966418000,
+    "update_time": 1497966418000
 }
 ```
 
