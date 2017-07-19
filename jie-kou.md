@@ -323,6 +323,130 @@ DTU/USER\_PASSWORD\_SAME
 
 DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
+#### 重置用户密码\[PUT\] /m/users/{user\_id}/password/reset
+
+### 工厂相关
+
+#### 获取工厂信息\[GET\] /m/factories/{factory\_id}
+
+#### 获取工厂列表\[GET\] /m/factories?$count=true&$offset=偏移量&$limit=数量
+
+#### 添加工厂\[POST\] /m/factories
+
+#### 更新工厂信息\[PATCH\] /m/factories/{factory\_id}
+
+#### 删除工厂\[DELETE\] /m/factories/{factory\_id}
+
+### DTU设备相关
+
+#### 获取某一个工厂下DTU设备信息\[GET\] /m/factories/{factory\_id}/dtu
+
+#### 添加DTU设备\[POST\] /m/dtues
+
+#### 更新DTU设备信息\[PATCH\] /m/dtues/{dtu\_id}
+
+#### 删除DTU设备\[DELETE\] /m/dtues/{dtu\_id}
+
+### 总闸相关
+
+#### 获取某一个工厂下总闸信息\[GET\] /m/factories/{factory\_id}/main\_switch
+
+#### 添加总闸\[POST\] /m/main\_switches
+
+#### 更新总闸信息\[PATCH\] /m/main\_switches/{main\_switch\_id}
+
+#### 删除总闸\[DELETE\] /m/main\_switches/{main\_switch\_id}
+
+### PLC设备相关
+
+#### 获取某一个工厂下PLC设备信息\[GET\] /m/factories/{factory\_id}/plc
+
+#### 添加PLC设备\[POST\] /m/plcs
+
+#### 更新PLC设备信息\[PATCH\] /m/plcs/{plc\_id}
+
+#### 删除PLC设备\[DELETE\] /m/plcs/{plc\_id}
+
+### 环境控制设备相关
+
+#### 获取某一个PLC设备下环境控制设备列表\[GET\] /m/plcs/{plc\_id}/eces?$count=true&$offset=偏移量&$limit=数量
+
+#### 获取环境控制设备列表\[GET\] /m/eces?$count=true&$offset=偏移量&$limit=数量&no=设备编码
+
+#### 获取环境控制设备信息\[GET\] /m/eces/{ece\_id}
+
+#### 添加环境控制设备\[POST\] /m/eces 
+
+#### 更新环境控制设备\[PATCH\] /m/eces/{ece\_id}
+
+#### 删除环境控制设备\[DELETE\] /m/eces/{ece\_id}
+
+### 池子相关
+
+#### 获取某一个工厂下池子列表\[GET\] /m/factories/{factory\_id}/pools?$count=true&$offset=偏移量&$limit=数量
+
+#### 获取池子列表\[GET\] /m/pools?$count=true&$offset=偏移量&$limit=数量&no=池子编码
+
+#### 获取池子信息\[GET\] /m/pools/{pool\_id}
+
+#### 添加池子\[POST\] /m/pools 
+
+#### 更新池子\[PATCH\] /m/pools/{pool\_id}
+
+#### 删除池子\[DELETE\] /m/pools/{pool\_id}
+
+### 溶解氧传感器相关
+
+#### 获取某一个工厂下溶解氧传感器列表\[GET\] /m/factories/{factory\_id}/do\_sensors?$count=true&$offset=偏移量&$limit=数量
+
+#### 获取溶解氧传感器列表\[GET\] /m/do\_sensors?$count=true&$offset=偏移量&$limit=数量&no=传感器编码
+
+#### 获取溶解氧传感器信息\[GET\] /m/do\_sensors/{do\_sensor\_id}
+
+#### 添加溶解氧传感器\[POST\] /m/do\_sensors 
+
+#### 更新溶解氧传感器\[PATCH\] /m/do\_sensors/{do\_sensor\_id}
+
+#### 删除溶解氧传感器\[DELETE\] /m/do\_sensors/{do\_sensor\_id}
+
+### 污水传感器相关
+
+#### 获取某一个工厂下污水传感器列表\[GET\] /m/factories/{factory\_id}/water\_sensors?$count=true&$offset=偏移量&$limit=数量
+
+#### 获取污水传感器列表\[GET\] /m/water\_sensors?$count=true&$offset=偏移量&$limit=数量&no=传感器编码
+
+#### 获取污水传感器信息\[GET\] /m/water\_sensors/{water\_sensor\_id}
+
+#### 添加污水传感器\[POST\] /m/water\_sensors 
+
+#### 更新污水传感器\[PATCH\] /m/water\_sensors/{water\_sensor\_id}
+
+#### 删除污水传感器\[DELETE\] /m/water\_sensors/{water\_sensor\_id}
+
+### 大流量表相关
+
+#### 获取某一个工厂下大流量表列表\[GET\] /m/factories/{factory\_id}/big\_flow\_meters?$count=true&$offset=偏移量&$limit=数量
+
+#### 获取大流量表列表\[GET\] /m/big\_flow\_meters?$count=true&$offset=偏移量&$limit=数量&no=传感器编码
+
+#### 获取大流量表信息\[GET\] /m/big\_flow\_meters/{big\_flow\_meter\_id}
+
+#### 添加大流量表\[POST\] /m/big\_flow\_meters
+
+#### 更新大流量表\[PATCH\] /m/big\_flow\_meters/{big\_flow\_meter\_id}
+
+#### 删除大流量表\[DELETE\] /m/big\_flow\_meters/{big\_flow\_meter\_id}
+
+### 设备日志相关
+
+#### 获取设备日志列表\[GET\] /m/device\_logs?$count=true&$offset=偏移量&$limit=数量&device\_type=设备类型&device\_id=设备ID
+
+#### 获取设备日志信息\[GET\] /m/device\_logs/{device\_logs_id}
+
+#### 获取设备日志信息\[GET\] /m/device\_logs/{device\_logs_id}
+
+#### 添加设备日志\[POST\] /m/device\_logs
+
 ### 设备相关
 
 #### 获取单个设备信息\[GET\] /m/devices/{device\_id}

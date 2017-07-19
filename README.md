@@ -49,13 +49,13 @@ id 默认自增
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
 
-* 控制环境设备environmental control equipment（ece）
+* 环境控制设备environmental control equipment（ece）
 
 | 字段 | 数据类型 | 主键 | 是否不为空 | 独一无二 | 默认值 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | INT\(11\) | 是 | 是 |  |  | ID |
-| plc\_id | INT\(11\) |  | 是 | 与name联合唯一索引 |  | PLC设备ID |
-| name | VARCHAR\(45\) |  | 是 | 与plc\_id联合唯一索引 |  | 环境设备名称 |
+| plc\_id | INT\(11\) |  | 是 | |  | PLC设备ID |
+| name | VARCHAR\(45\) |  | 是 | |  | 环境设备名称 |
 | no | VARCHAR\(45\) |  | 是 | 是 |  | 设备编码 |
 | switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
 | abnormal\_status | INT\(11\) |  | 是 |  | 1 | 1正常，2异常 |
