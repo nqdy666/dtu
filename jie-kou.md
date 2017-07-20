@@ -223,6 +223,7 @@ http响应码 200 服务端响应成功
 {
     "id": 1,
     "user_id": "1",
+    "digest": "摘要",
     "mark": '备注',
     "create_time": 1499852542000
 }
@@ -237,6 +238,19 @@ http响应码 200 服务端响应成功
     "receivers": '13452331156,18456112256',
     "template": "模板",
     "mark": '备注',
+    "create_time": 1499847783000,
+    "update_time": 1499847783000
+}
+```
+
+* ##### PARA\_VALUE
+
+```
+{
+    "id": 1,
+    "key": "key",
+    "value": '值',
+    "description": "模板",
     "create_time": 1499847783000,
     "update_time": 1499847783000
 }
@@ -324,6 +338,38 @@ DTU/USER\_PASSWORD\_SAME
 DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 #### 重置用户密码\[PUT\] /m/users/{user\_id}/password/reset
+
+### 用户日志相关
+
+#### 获取用户日志\[GET\] /m/user\_logs/{user\_log\_id}
+
+#### 获取用户日志列表\[GET\] /m/user\_logs?$count=true&$offset=偏移量&$limit=数量
+
+#### 添加用户日志\[POST\] /m/user\_logs
+
+#### 删除用户日志\[DELETE\] /m/user\_logs/{user\_log\_id}
+
+### 短信模板相关
+
+#### 获取短信模板信息\[GET\] /m/sms\_templates/{sms\_template\_id}
+
+#### 获取短信模板列表\[GET\] /m/sms\_templates?$count=true&$offset=偏移量&$limit=数量
+
+#### 添加短信模板\[POST\] /m/sms\_templates
+
+#### 更新短信模板信息\[PATCH\] /m/sms\_templates/{sms\_template\_id}
+
+#### 删除短信模板\[DELETE\] /m/sms\_templates/{sms\_template\_id}
+
+### 参数设定相关
+
+#### 获取参数设定信息\[GET\] /c/values/{value\_id/key}
+
+#### 获取参数设定列表\[GET\] /m/values?$count=true&$offset=偏移量&$limit=数量
+
+#### 添加参数设定\[POST\] /m/values
+
+#### 删除参数设定\[DELETE\] /m/values/{value\_id}
 
 ### 工厂相关
 
@@ -439,13 +485,14 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 设备日志相关
 
-#### 获取设备日志列表\[GET\] /m/device\_logs?$count=true&$offset=偏移量&$limit=数量&device\_type=设备类型&device\_id=设备ID
+#### 获取设备的日志列表\[GET\] /m/devices\_logs?device\_type=设备类型&device\_id=设备ID&$count=true&$offset=偏移量&$limit=数量
 
-#### 获取设备日志信息\[GET\] /m/device\_logs/{device\_logs_id}
+#### 获取某一条设备操作日志详情\[GET\] /m/device_logs/{device\_log\_id}
 
-#### 获取设备日志信息\[GET\] /m/device\_logs/{device\_logs_id}
+#### 添加设备的操作日志\[GET\] /m/device_logs
 
-#### 添加设备日志\[POST\] /m/device\_logs
+#### 删除某一条设备操作日志\[DELETE\] /m/device_logs/{device\_log\_id}
+
 
 ### 设备相关
 
