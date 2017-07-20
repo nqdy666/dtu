@@ -351,7 +351,7 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 短信模板相关
 
-#### 获取短信模板信息\[GET\] /m/sms\_templates/{sms\_template\_id}
+#### 获取短信模板信息\[GET\] /c/sms\_templates/{sms\_template\_id}
 
 #### 获取短信模板列表\[GET\] /m/sms\_templates?$count=true&$offset=偏移量&$limit=数量
 
@@ -385,7 +385,9 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### DTU设备相关
 
-#### 获取某一个工厂下DTU设备信息\[GET\] /m/factories/{factory\_id}/dtu
+#### 获取DTU设备信息\[GET\] /m/dtues/{dtu\_id}
+
+#### 获取DTU设备列表\[GET\] /m/dtues?$count=true&$offset=偏移量&$limit=数量
 
 #### 添加DTU设备\[POST\] /m/dtues
 
@@ -395,7 +397,9 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 总闸相关
 
-#### 获取某一个工厂下总闸信息\[GET\] /m/factories/{factory\_id}/main\_switch
+#### 获取总闸信息\[GET\] /m/main\_switches/{main\_switch\_id}
+
+#### 获取总闸列表\[GET\] /m/main\_switches?$count=true&$offset=偏移量&$limit=数量
 
 #### 添加总闸\[POST\] /m/main\_switches
 
@@ -405,7 +409,9 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### PLC设备相关
 
-#### 获取某一个工厂下PLC设备信息\[GET\] /m/factories/{factory\_id}/plc
+#### 获取PLC设备信息\[GET\] /m/plcs/{plc\_id}
+
+#### 获取PLC设备列表\[GET\] /m/plcs?$count=true&$offset=偏移量&$limit=数量
 
 #### 添加PLC设备\[POST\] /m/plcs
 
@@ -415,11 +421,9 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 环境控制设备相关
 
-#### 获取某一个PLC设备下环境控制设备列表\[GET\] /m/plcs/{plc\_id}/eces?$count=true&$offset=偏移量&$limit=数量
-
-#### 获取环境控制设备列表\[GET\] /m/eces?$count=true&$offset=偏移量&$limit=数量&no=设备编码
-
 #### 获取环境控制设备信息\[GET\] /m/eces/{ece\_id}
+
+#### 获取环境控制设备列表\[GET\] /m/eces?$count=true&$offset=偏移量&$limit=数量
 
 #### 添加环境控制设备\[POST\] /m/eces 
 
@@ -429,11 +433,9 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 池子相关
 
-#### 获取某一个工厂下池子列表\[GET\] /m/factories/{factory\_id}/pools?$count=true&$offset=偏移量&$limit=数量
-
-#### 获取池子列表\[GET\] /m/pools?$count=true&$offset=偏移量&$limit=数量&no=池子编码
-
 #### 获取池子信息\[GET\] /m/pools/{pool\_id}
+
+#### 获取池子列表\[GET\] /m/pools?$count=true&$offset=偏移量&$limit=数量
 
 #### 添加池子\[POST\] /m/pools 
 
@@ -443,11 +445,9 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 溶解氧传感器相关
 
-#### 获取某一个工厂下溶解氧传感器列表\[GET\] /m/factories/{factory\_id}/do\_sensors?$count=true&$offset=偏移量&$limit=数量
-
-#### 获取溶解氧传感器列表\[GET\] /m/do\_sensors?$count=true&$offset=偏移量&$limit=数量&no=传感器编码
-
 #### 获取溶解氧传感器信息\[GET\] /m/do\_sensors/{do\_sensor\_id}
+
+#### 获取溶解氧传感器列表\[GET\] /m/do\_sensors?$count=true&$offset=偏移量&$limit=数量
 
 #### 添加溶解氧传感器\[POST\] /m/do\_sensors 
 
@@ -457,11 +457,9 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 污水传感器相关
 
-#### 获取某一个工厂下污水传感器列表\[GET\] /m/factories/{factory\_id}/water\_sensors?$count=true&$offset=偏移量&$limit=数量
-
-#### 获取污水传感器列表\[GET\] /m/water\_sensors?$count=true&$offset=偏移量&$limit=数量&no=传感器编码
-
 #### 获取污水传感器信息\[GET\] /m/water\_sensors/{water\_sensor\_id}
+
+#### 获取污水传感器列表\[GET\] /m/water\_sensors?$count=true&$offset=偏移量&$limit=数量
 
 #### 添加污水传感器\[POST\] /m/water\_sensors 
 
@@ -471,11 +469,9 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 大流量表相关
 
-#### 获取某一个工厂下大流量表列表\[GET\] /m/factories/{factory\_id}/big\_flow\_meters?$count=true&$offset=偏移量&$limit=数量
-
-#### 获取大流量表列表\[GET\] /m/big\_flow\_meters?$count=true&$offset=偏移量&$limit=数量&no=传感器编码
-
 #### 获取大流量表信息\[GET\] /m/big\_flow\_meters/{big\_flow\_meter\_id}
+
+#### 获取大流量表列表\[GET\] /m/big\_flow\_meters?$count=true&$offset=偏移量&$limit=数量
 
 #### 添加大流量表\[POST\] /m/big\_flow\_meters
 
@@ -493,54 +489,4 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 #### 删除某一条设备操作日志\[DELETE\] /m/device_logs/{device\_log\_id}
 
-
-### 设备相关
-
-#### 获取单个设备信息\[GET\] /m/devices/{device\_id}
-
-* 错误码：
-
-DTU/DEVICE\_NOT\_FOUND
-
-#### 获取设备列表\[GET\] /m/devices?$count=true&$offset=偏移量&$limit=数量
-
-#### 添加设备\[POST\] /m/devices
-
-* 错误码：
-
-DTU/DEVICE\_EXISTS
-
-#### 更新设备\[PATCH\] /m/devices/{device\_id}
-
-* 错误码：
-
-DTU/DEVICE\_NOT\_FOUND
-
-#### 删除设备\[DELETE\] /m/devices/{device\_id}
-
-* #### 错误码：
-
-DTU/DEVICE\_NOT\_FOUND
-
-### 设备操作日志相关
-
-#### 获取某一个设备的操作日志\[GET\] /m/devices/{device\_id}/logs?$count=true&$offset=偏移量&$limit=数量
-
-#### 获取某一条设备操作日志详情\[GET\] /m/devices/logs/{device\_log\_id}
-
-* 错误码：
-
-DTU/DEVICE\_LOG\_NOT\_FOUND
-
-#### 删除某一条设备操作日志\[GET\] /m/devices/logs/{device\_log\_id}
-
-* #### 错误码：
-
-DTU/DEVICE\_LOG\_NOT\_FOUND
-
-#### 添加设备的操作日志\[GET\] /m/devices/{device\_id}/logs
-
-* #### 错误码：
-
-DTU/DEVICE\_NOT\_FOUND
 
