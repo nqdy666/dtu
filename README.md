@@ -95,7 +95,7 @@ id 默认自增
 | name | VARCHAR\(45\) |  | 是 | 是 |  | 名称 |
 | switch\_status | INT\(11\) |  | 是 |  | 2 | 1开，2关 |
 | abnormal\_status | INT\(11\) |  | 是 |  | 1 | 1正常，2异常 |
-| value | VARCHAR\(60\) |  |  |  |  | 溶解氧值 |
+| value | VARCHAR\(60\) |  |  |  |  | 净水值 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
 | update\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 更新时间 |
 
@@ -141,7 +141,7 @@ id 默认自增
 | 字段 | 数据类型 | 主键 | 不为空 | 独一无二 | 默认值 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | INT\(11\) | 是 | 是 |  |  | ID |
-| user\_id | INT\(11\) |  | 是 |  |  | 设备ID |
+| user\_id | INT\(11\) |  | 是 |  |  | 用户ID |
 | digest | VARCHAR\(256\) |  |  |  |  | 摘要 |
 | mark | VARCHAR\(1024\) |  |  |  |  | 备注 |
 | create\_time | TIMESTAMP |  | 是 |  | CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 创建时间 |
@@ -151,7 +151,7 @@ id 默认自增
 | 字段 | 数据类型 | 主键 | 不为空 | 独一无二 | 默认值 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | INT\(11\) | 是 | 是 |  |  | ID |
-| title | VARCHAR\(64\) |  | 是 |  |  | 标题 |
+| title | VARCHAR\(64\) |  | 是 | 是 |  | 标题 |
 | receivers | VARCHAR\(256\) | | 是 |  |  | 接受者手机号码，用逗号隔开 |
 | template | VARCHAR\(1024\) |  | 是 |  |  | 模板 |
 | mark | VARCHAR\(240\) |  |  |  |  | 备注 |
