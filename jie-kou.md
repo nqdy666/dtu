@@ -351,15 +351,15 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 短信模板相关
 
-#### 获取短信模板信息\[GET\] /c/sms\_templates/{sms\_template\_id}
+#### 获取短信模板信息\[GET\] /c/sms\_templates/{sms\_template\_id} [开发完成]
 
-#### 获取短信模板列表\[GET\] /m/sms\_templates?$count=true&$offset=偏移量&$limit=数量
+#### 获取短信模板列表\[GET\] /m/sms\_templates?$count=true&$offset=偏移量&$limit=数量 [开发完成]
 
-#### 添加短信模板\[POST\] /m/sms\_templates
+#### 添加短信模板\[POST\] /m/sms\_templates [开发完成]
 
-#### 更新短信模板信息\[PATCH\] /m/sms\_templates/{sms\_template\_id}
+#### 更新短信模板信息\[PATCH\] /m/sms\_templates/{sms\_template\_id} [开发完成]
 
-#### 删除短信模板\[DELETE\] /m/sms\_templates/{sms\_template\_id}
+#### 删除短信模板\[DELETE\] /m/sms\_templates/{sms\_template\_id} [开发完成]
 
 ### 参数设定相关
 
