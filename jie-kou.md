@@ -363,13 +363,15 @@ DTU/USER\_OLD\_PASSWORD\_INCORRECT
 
 ### 参数设定相关
 
-#### 获取参数设定信息\[GET\] /c/values/{value\_id/key}
+#### 获取参数设定信息\[GET\] /c/values/{value\_id/key} [开发完成]
 
-#### 获取参数设定列表\[GET\] /m/values?$count=true&$offset=偏移量&$limit=数量
+#### 获取参数设定列表\[GET\] /c/values?$count=true&$offset=偏移量&$limit=数量 [开发完成]
 
-#### 添加参数设定\[POST\] /m/values
+#### 添加参数设定\[POST\] /m/values [开发完成]
 
-#### 删除参数设定\[DELETE\] /m/values/{value\_id}
+#### 更新参数设定\[POST\] /m/values/{value_id} [开发完成]
+
+#### 删除参数设定\[DELETE\] /m/values/{value\_id} [开发完成]
 
 ### 工厂相关
 
